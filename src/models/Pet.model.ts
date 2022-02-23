@@ -157,7 +157,7 @@ export const Pet = {
     },
     getByRace: (race: string): Pet[] =>{
         return data.filter( pet => 
-            pet.race.toLocaleLowerCase().indexOf(race.toLocaleLowerCase()) > -1
+            pet.race.toLowerCase().indexOf(race.toLowerCase()) > -1
         )
     }
 }
